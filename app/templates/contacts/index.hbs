@@ -1,0 +1,13 @@
+<ul>
+  {{#each contact in model}}
+    <li>
+      {{#link-to 'contact' contact}}
+        {{contact.id}}
+        {{contact.last_name}},
+        {{contact.first_name}}
+      {{/link-to}}
+    </li>
+  {{else}}
+    <li>No contacts found.</li>
+  {{/each}}
+</ul>
