@@ -15,9 +15,10 @@ module.exports = function(environment) {
     contentSecurityPolicy: {
     'default-src': "'none'",
     'font-src': "'self'",
+    'script-src': "'self' 'unsafe-inline'",
     'connect-src': "http://localhost:3000/api/v1/contacts",
     'img-src': "'self'",
-    'style-src': "'self'",
+    'style-src': "'self' 'unsafe-inline'",
     'media-src': "'self'"
   },
     APP: {
