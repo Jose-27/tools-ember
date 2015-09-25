@@ -59,7 +59,9 @@ $nav-color: #333;
   margin-bottom: 2rem;
 }
 /*Global stling*/
-
+.full-width .row{
+    width: 100%;
+}
 .heavy-text{
 font-weight:900;
 font-size:60px;
@@ -67,4 +69,33 @@ font-size:60px;
     color: #ef4135;
     font-weight:100;
   }
+}
+.toggle {
+  width: 35px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 10px;
+}
+
+.toggle div {
+  width: 100%;
+  height: 5px;
+  background: #fff;
+  margin: 4px auto;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+}
+
+.toggle.on .one {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.toggle.on .two {
+  opacity: 0;
+}
+
+.toggle.on .three {
+  transform: rotate(-45deg) translate(7px, -8px);
 }

@@ -1,5 +1,5 @@
-<div class="row" style="border:1px solid red;">
-  <header>
+<div>
+  <header class="row">
       <aside class="pull_left">
         <h1 class="heavy-text with-light-text">
         TOOLS 
@@ -20,6 +20,21 @@
           </ul>
       </aside>
   </header>
+    <nav class="full-width" style="height:70px;background-color:#212328;">
+     <div class="row">
+         <div class="medium-4 columns" style="background-color: #ef4135;height:70px;border:1px solid red;">
+         
+         <h2 style="color:#fff;font-weight:600;">Categories</h2>
+             <div class="toggle {{if setMenuToActive 'on'}}" {{action 'navActive'}}>
+				  <div class="one"></div>
+				  <div class="two"></div>
+				  <div class="three"></div>
+				</div>
+         </div>  
+         
+         <div class="medium-7 columns" style="background-color: #fff;height:70px;border:1px solid red;"></div>
+     </div>
+    </nav>
 </div>
 <!--
 <h2>Biznz</h2>
